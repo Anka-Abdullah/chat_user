@@ -9,7 +9,6 @@ dotenv.config();
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/nestjs'),
     UserModule,
     AuthModule,
     DatabaseModule,
