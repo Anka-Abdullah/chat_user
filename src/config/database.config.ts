@@ -9,7 +9,7 @@ export const getDatabaseConfig = async (configService: ConfigService): Promise<M
       throw new Error('DATABASE_URI is not defined in .env file');
     }
     
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Dummy async operation
+    await new Promise(resolve => setTimeout(resolve, 1000)); 
 
     console.log('Successfully connected to the database');
     return { uri };

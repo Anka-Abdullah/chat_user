@@ -7,10 +7,7 @@ export class CreateUserDto {
     readonly last_name: string;
     readonly gender: 'male' | 'female';
     readonly birthday: Date;
-    readonly Horoscope?: string;
-    readonly zodiac?: string;
     readonly height?: number;
     readonly weight?: number;
-    readonly image?: string;
   }
   

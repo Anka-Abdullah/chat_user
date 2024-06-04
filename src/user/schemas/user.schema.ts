@@ -8,7 +8,7 @@ enum Gender {
   Female = 'female',
 }
 
-@Schema()
+@Schema({ timestamps: true })
 export class User {
   @Prop({ required: true, unique: true, index: true })
   email: string;
@@ -46,8 +46,8 @@ export class User {
   @Prop({ type: Number, default: 0 })
   weight: number;
 
-  @Prop({ default: '' })
-  image: string;
+  @Prop({ default: true })
+  isActive: boolean;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
